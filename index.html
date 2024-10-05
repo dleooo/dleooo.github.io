@@ -2,13 +2,40 @@
 <html>
     <head>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
     <title> Web Portfolio </title>
     </head>
 
     <body>
         <h1><center>Daniela Leo's Web Portfolio</center></h1>
-<h2><u>My Education</u>🎓</h2>
+        <!--Name prompt Button-->   
+        <button id="nameButton">Enter your name</button>
+        <p id="displayName"></p>
+    
+        <!--Navigation Bar & Dropdown-->      
+      <br>
+      <div> <div onmouseover="mOver(this)" class="navbar">
+        <a href="index.html">Home</a>
+        <a href="https://www.torontomu.ca/">TMU</a>
+        <a href="https://www.tcdsb.org/lorettoabbey">Loretto Abbey</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Connect with Me!</button>
+          <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+          <a href="https://www.linkedin.com/in/daniela-l-748558282/">LinkedIn</a>
+          <a href="dleooo.github.io">Github</a>
+            </div>
+        </div> 
+      </div>
+      </div> 
 
+      <!--Image-->   
+      <br>
+      <center><img src="image.jpg" class="img" id="img1" onclick="change(this)"></center> 
+      <br>
+
+      <h2><u>My Education</u>🎓</h2>
 <h4>Ted Rogers School of Management - Toronto Metropolitian University: 2021-2026</h4>
 <li>Bachelor of Commerce - Business Technology Management Co-op Program</li>
 <h4>Loretto Abbey Catholic Secondary School: 2017-2021</h4>
@@ -76,6 +103,13 @@
         <td>Highest mark in Technology Design class in Grade 12.</td>
       </tr>
   </table>
-
+  <script>
+    document.getElementById('nameButton').addEventListener('click', function() {
+      var userName = prompt('Please enter your name:');
+      if (userName) {
+          document.getElementById('displayName').textContent = 'Hello, ' + userName + '!';
+      }
+    });
+  </script>
 </body>
 </html>
