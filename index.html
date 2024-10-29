@@ -3,7 +3,8 @@
     <head>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    
+    <script src="form.js"></script>
+
     <title> Web Portfolio </title>
     </head>
 
@@ -13,6 +14,8 @@
         <button id="nameButton">Enter your name</button>
         <p id="displayName"></p>
     
+<p>Scroll to bottom to fill out form!</p>
+
         <!--Navigation Bar & Dropdown-->      
       <br>
       <div> <div onmouseover="mOver(this)" class="navbar">
@@ -103,6 +106,85 @@
         <td>Highest mark in Technology Design class in Grade 12.</td>
       </tr>
   </table>
+  <br>
+  <br>
+
+  <!--Form-->
+  <h1>Form</h1>
+  <div class="divTable">
+     <form id="myform">
+      <fieldset>
+        <legend>Personal Info:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Jane"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Smith"><br><br>
+             </fieldset>
+    <p>
+      Enter your email:
+    <input id="email" type="text" value="youremail@email.com">
+    </p>
+    <p>
+      Enter your SIN:
+    <input id ="sin" type="password" value="12345678"> 
+    </p>
+    <p>
+     1.  What features do you like about personal web portfolio websites? (Select all that apply)</p>
+    <h5>
+    <input id="choice1" type="checkbox">Interactive elements
+    <br>
+    <input id="choice2" type="checkbox">Clean and organized layout
+    <br>
+    <input id="choice3" type="checkbox">Easy navigation
+    <br>
+    <input id="choice4" type="checkbox">Contact information and accessibility
+    </h5>
+    <p>
+     2. Have you ever used a personal web portfolio to make a hiring decision?
+      <br>
+    <input id="yes" type="radio" value="A" name="choice"> Yes
+    <input id="no" type="radio" value="B" name="choice"> No
+    </p>
+
+<p>3. Tell us about yourself!</p>
+<textarea id="longAnswer" name="message" rows="10" cols="30">
+  Enter response here
+  </textarea>
+
+  <br>
+  <p for="colours">4. Which colour do you like the most:</p>
+     <select id="colours" name="colours" size="4" multiple>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="black">Black</option>
+      <option value="yellow">Yellow</option>
+    </select><br><br>
+   
+    <p>5. What is your age range?</p>
+    <input list="ages" name="agerange">
+    <datalist id="ages">
+      <option value="11-20">
+      <option value="21-30">
+      <option value="31-40">
+      <option value="41-50">
+      <option value="51-60">
+      <option value="61-70">
+      <option value="71+">
+    </datalist>
+
+    <p>
+    <input type="submit" value="Submit">
+    <input type="reset">
+    </p>
+    </form>
+      </div>
+  
+      <br>
+  <footer>
+    <p>Author: Daniela Leo<br>
+    Copyright 2024</p>
+  </footer>
+
   <script>
     document.getElementById('nameButton').addEventListener('click', function() {
       var userName = prompt('Please enter your name:');

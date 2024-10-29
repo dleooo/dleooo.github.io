@@ -33,9 +33,16 @@
     color: rgb(6, 63, 150);
   }
 
+  h5 {
+    font: 'Franklin Gothic Medium';   
+    font-weight: lighter;
+    font-size: 12pt;
+    color: rgb(0, 1, 2);
+  }
+
   p {
     font: 'Franklin Gothic Medium';
-    font-size: 12pt;
+    font-size: 13pt;
     color: rgb(0, 32, 139)
   }
 
