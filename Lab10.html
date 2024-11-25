@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <script src="form.js"></script>
+
+<meta charset="UTF-8">
+<meta name="description" contents="Information Technology Student's Web Portfolio with projects, form, education, contact">
+<meta name="keywords" contents=" Daniela Leo's Online Web Portfolio">
+<meta name="Author" content="Daniela Leo">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+<style>  
+p {
+    font: 'Arial';
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    color: rgb(0, 32, 139)
+  }
+  </style>
+
+<title> Web Portfolio </title>
+    </head>
+
+    <body id="content">
+        <h1><center>Daniela Leo's Web Portfolio</center></h1>
+       
+        <!--Navigation Bar & Dropdown-->      
+      <br>
+      <div> <div onmouseover="mOver(this)" class="navbar">
+        <a href="index.html">Home</a>
+        <a href="https://www.torontomu.ca/">TMU</a>
+        <a href="https://www.tcdsb.org/lorettoabbey">Loretto Abbey</a>
+        <a href="Lab10.html">Lab 10</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Connect with Me!</button>
+          <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+          <a href="https://www.linkedin.com/in/daniela-l-748558282/">LinkedIn</a>
+          <a href="https://dleooo.github.io/">Github</a>
+            </div>
+        </div> 
+      </div>
+      </div> 
+<br>
+
+<!--Instagram Button-->
+<p>Instagram button:</p>
+<a href="https://www.instagram.com/torontomet/?hl=en">
+<button class="btn"><i class="fa fa-instagram" onclick="insta()"></i></button>
+</a> 
+<br>
+
+  <h1>SEO Techniques</h1>    
+<h2>Target Keywords Your Competitors Are Ranking for</h2>
+<p>Doing a keyword gap analysis identifies keywords your website does not rank for but your competitors do. In determining the words you do not rank for, it allows you to fill gaps in your site in order to get more traffic. This allows your site to rank for more keywords and good for sourcing opportunities to outrank competitors, and allow for your target user to find your site. (Silva, 2024)</p>
+<h2>Have a Link-Worthy Site</h2>
+<p>A website that is content-rich, authoritative, and unbiased is more likely to attract links. It also improves your site's authority and credibility by adding relevant links within your text, especially when writing out the name of the destination of the link, which is called “descriptive links” which adds values to your site in that it adds to its accessibility. Further, leveraging internal links and backlinks improves SEO as well. (Michigan Technological University, n.d.)</p>
+<h2>Content Marketing</h2>
+<p>Ensuring your website's content is up to date and relevant is essential as high-quality content is favoured by Google’s ranks. Creating quality content that is unique from what is already available enhances the user experience and has a higher chance of being shared on social media, furthering your website's overall reach (Optimizely, n.d.). This means that by ensuring your content is relevant and authentic, your site traffic can increase and thus drive your search engine ranking.(Michigan Technological University, n.d.)</p>
+<br>
+<h1>SMO Techniques</h1>    
+<h2>Growth Optimization</h2>
+<p>Making sure your bio has relevant info like who you are, what you do, and keywords can tell a user why they should follow you, as well as allowing social media search engines to lead people looking for specific topics to your page. Further, including relevant keywords and hashtags in your captions enhance your chance at discoverability, as the more words relevant to someone's search or interest will increase your chances of being featured. Utilizing hashtags is crucial for growth optimization within SMO as it provides keywords and highlights who your page and posts are relevant to based on a user's interests. For example, doing this will increase your chance of landing on a user’s For You Page.(Tien, 2022)</p>
+<h2>Engagement Optimization</h2>
+<p>This includes posting at the times your audience is mostly likely on social media, which can increase your chances of being seen and receiving engagement such as likes or comments on your posts. It's important to also facilitate a community amongst your users, for example creating engaging Stories where you ask users interesting questions that are relevant to your audience. Also, utilizing features such as carousels can drive you to get 3.1x more engagement on platforms such as Instagram, Linkedin, Facebook, and X. Thus, you can increase your audience engagement and your reach on social media.(Tien, 2022)</p>
+<h2>Conversion Optimization</h2>
+<p>This SMO technique involves only having one call to action link in your bio, similar to a “link tree”, which allows your visitors to click and engage with your website and allows you to have multiple relevant links without your bio looking crowded. Additionally, optimizing your links with UTMs allows you to track how your audience engages with your links and their behaviour while viewing your social media channels. Thus, tracking with UTMs you will be able to understand what draws in users and be able to see which of your posts drive the most engagement and traffic to your site.(Tien, 2022)</p>
+ <br>
+<h1>References</h1>
+<p>Silva, Carlos. (2024).<em> 16 SEO Techniques to Boost Organic Traffic + Rankings</em>. Semrush. <a href="https://www.semrush.com/blog/seo-techniques/">https://www.semrush.com/blog/seo-techniques/</a> 
+    <br>Michigan Technological University. (n.d.). <em>Five Ways to Improve Your Site's Ranking (SEO)</em>. Michigan Technological University. <a href="https://www.mtu.edu/umc/services/websites/seo/">https://www.mtu.edu/umc/services/websites/seo/</a> 
+    <br>Optimizely. (n.d.). <em>Search Engine Optimization</em>. Optimizely. <a href="https://www.optimizely.com/optimization-glossary/search-engine-optimization/">https://www.optimizely.com/optimization-glossary/search-engine-optimization/</a> 
+    <br>Tien, Shannon. (2022). <em>13 Easy Ways To Tackle Social Media Optimization</em>. Hootsuite. <a href="//blog.hootsuite.com/social-media-optimization/">//blog.hootsuite.com/social-media-optimization/</a></p>
+  <footer>
+    <center><p>Author: Daniela Leo<br>
+    Copyright 2024</p></center>
+  </footer>
+
+
+  <script>
+    document.getElementById('nameButton').addEventListener('click', function() {
+      var userName = prompt('Please enter your name:');
+      if (userName) {
+          document.getElementById('displayName').textContent = 'Hello, ' + userName + '!';
+      }
+    });
+
+var content = document.getElementById("content");
+var smallButton = document.getElementById("small");
+var normalButton = document.getElementById("normal");
+var largeButton = document.getElementById("large");
+smallButton.onclick = function(e){
+content.style.fontSize = "10px";	
+}
+normalButton.onclick = function(e){
+content.style.fontSize = "16px";	
+}
+largeButton.onclick = function(e){
+content.style.fontSize = "20px";	
+}
+
+function backChange()
+{   
+document.body.style.backgroundColor= "white";
+}
+
+function cnTower() {
+  alert("Ground view looking up to CN Tower with clear blue sky in background.");
+}
+function tmu() {
+  alert("Inside study room, with paper notes, pencils, and laptop set on table in preparation for an online class that is being projected onto a television.");
+}
+function blum() {
+  alert("View of Blue Mountain Village and Georgian Bay from the top of Blue Mountain in Ontario, during sunset on a clear evening.");
+}
+
+</script>
+</body>
+</html>
